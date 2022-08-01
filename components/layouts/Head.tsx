@@ -8,6 +8,7 @@ import {
   Login,
   MenuArea,
   MyPageLayer,
+  NoticeBar,
   SearchForm
 } from "./styles";
 import { css } from "@emotion/react";
@@ -79,38 +80,12 @@ function Head() {
   return (
     <>
       <Header>
-        <div
-          css={css`
-              display: -webkit-box;
-              display: -webkit-flex;
-              display: -ms-flexbox;
-              display: flex;
-              -webkit-flex: 1;
-              -ms-flex: 1;
-              flex: 1;
-              height: 50px;
-              background: #effafb;
-              -webkit-box-pack: center;
-              -ms-flex-pack: center;
-              -webkit-justify-content: center;
-              justify-content: center;
-              -webkit-align-items: center;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center;
-              color: #5f4c4b;
-              font-size: 12px;
-            }
-            @media (max-width: 1000px) {
-                display: none;
-            }
-          `}
-        >
+        <NoticeBar>
           💻 개발 확인용 서버입니다. 📳 모바일 우선 반응형웹으로 디자인
           되었습니다. 🎁모든 상품은 /creator 페이지에서 등록됩니다. 🔑테스트
           아이디 : master2@master.com, 비밀번호 : test123! 🎞️ 온라인강의
           시스템(Vod) 및 실시간 스트리밍 서비스 사용법 (포트폴리오 문서참고)
-        </div>
+        </NoticeBar>
         <div className="inner">
           <h1>
             <Link href="/">

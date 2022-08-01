@@ -97,6 +97,21 @@ export const Header = styled.header`
   }
 `;
 
+export const NoticeBar = styled.div`
+  display: flex;
+  -webkit-flex: 1;
+  flex: 1;
+  height: 50px;
+  background: #effafb;
+  justify-content: center;
+  align-items: center;
+  color: #5f4c4b;
+  font-size: 12px;
+  @media (max-width: 1000px) {
+    display: none;
+  }
+`;
+
 export const MenuArea = styled.ul`
   ${mq[0]} {
     display: none;
